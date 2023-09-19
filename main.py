@@ -21,3 +21,14 @@ def transcribe_audio(audio_path):
         
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    if request.method == 'POST': 
+        if 'file' not in request.files: 
+            return "File Not Found" 
+        
+        file = request.files['file']
+
+        if file.filename == '':
+            return "No selected file"
+        if file: 
+            audio_path = os.path.join(app.config['UPLOAD_Folder'], file.filename)
+            file.save(audio_path)
