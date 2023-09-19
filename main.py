@@ -32,3 +32,13 @@ def index():
         if file: 
             audio_path = os.path.join(app.config['UPLOAD_Folder'], file.filename)
             file.save(audio_path)
+
+            transcription = transcribe_audio(audio_path)
+            os.remove(audio_path)
+
+            return "Transcription: " + transcription
+        
+        return render_template('index_html')
+    
+    if __name__ == '__main__': 
+        app.run(debug=True)
