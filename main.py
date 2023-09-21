@@ -4,7 +4,6 @@ import speech_recognition as sr
 
 app = Flask(__name__)
 
-# Corrected the configuration line
 app.config['UPLOAD_FOLDER'] = 'uploads'
 
 def transcribe_audio(audio_path):
