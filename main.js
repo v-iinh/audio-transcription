@@ -139,3 +139,24 @@ function animate(){
 
     requestAnimationFrame(animate);
 }
+
+var localStorageData = localStorage.getItem('numberOfCars');
+var localStorageDiv = document.getElementById('localNumber');
+localStorageDiv.innerHTML = localStorageData;
+
+var localStorageData = localStorage.getItem('mutationRate');
+var localStorageDiv = document.getElementById('localRate');
+localStorageDiv.innerHTML = localStorageData;
+
+var localStorageData = localStorage.getItem('bestBrain');
+var localStorageDiv = document.getElementById('localBest');
+localStorageDiv.innerHTML = localStorageData;
+
+function dataDisplay() {
+    var trueContainer = document.getElementById('trueContainer');
+    trueContainer.style.display = "flex"
+}
+
+function refreshPage() {
+    location.reload(true);
+}
