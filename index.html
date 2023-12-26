@@ -2,13 +2,26 @@
 <head>
     <title>Self Driving Car</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="trueContainer" id="trueContainer">
+        <div class="container">
+            <div class="text">Number of Cars</div>
+            <div class="local" id="localNumber"></div>
+            <div class="text">Rate of Mutation</div>
+            <div class="local" id="localRate"></div>
+            <div class="text">Saved Car Data</div>
+            <div class="local" id="localBest"></div>
+            <div class="exit" onclick="refreshPage()"><i class="fas fa-sign-out-alt"></i></div>
+        </div>
+    </div>
     <canvas id="carCanvas"></canvas>
     <div id="verticalButtons">
         <button onClick="window.location.reload();">Refresh Page</button>
         <button onclick="save()">Save Trial</button>
         <button onclick="discard()">Discard All</button>
+        <button id="mutationDown" onClick="dataDisplay()">Local Data</button>
         <button id="addCarsButton" onClick="window.location.reload();">Add Cars</button>
         <button id="removeCarsButton" onClick="window.location.reload();">Remove Cars</button>
         <button id="mutationUp" onClick="window.location.reload();">Increase Mutate</button>
