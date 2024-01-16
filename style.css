@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background: darkgray; 
+    background: white; 
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ button{
 }
 
 button:hover{
-    background: white;
+    background: #F0DB5B;
     transition: 1s;
 }
 
@@ -40,7 +40,7 @@ button:hover{
 }
 
 #carCanvas{
-    background: lightgray;
+    background: white;
 }
 
 .trueContainer{
@@ -48,7 +48,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center; /* Optional: Center items horizontally in the container */
-    background-color: lightgray;
+    background-color: white;
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -60,7 +60,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center; /* Optional: Center items horizontally in the container */
-    background-color: lightgray;
+    background-color: white;
     width: 50%;
     height: 100vh;
     justify-content: center;
@@ -75,7 +75,7 @@ button:hover{
 }
 
 .local {
-    border: 5px solid whitesmoke; /* Optional: Add borders to local divs for better visibility */
+    border: 5px solid darkgray; /* Optional: Add borders to local divs for better visibility */
     margin-bottom: 10px; /* Optional: Add some spacing between local divs */
     align-items: center;
     justify-content: center;
