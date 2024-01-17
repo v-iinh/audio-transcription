@@ -1,7 +1,7 @@
 
 # Self Driving Car
 
-This is my first project involving AI. While following FCC's guide on making an AI car, I improved upon it by making the program interactive and customizable by the user, whereas it can only be edited in the source code originally.
+This is my first project involving AI while following FCC's guide, in order to explore programming neural networks. I improved upon it by making the program interactive and customizable by the user, whereas it can only be edited in the source code originally.
 
 ## Acknowledgements
 
