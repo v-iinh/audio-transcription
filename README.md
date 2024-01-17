@@ -7,7 +7,7 @@ This is my first project involving AI. While following FCC's guide on making an 
 
 - _Sourced from freeCodeCamp's [Neural Networks and Machine Learning](https://www.youtube.com/watch?v=Rs_rAxEsAvI&t=8339s) video._
 
-- _Many thanks to [Dr. Radu Mariescu-Istodor](https://radufromfinland.com) for creating this course!_
+- _Credits to [Dr. Radu Mariescu-Istodor](https://radufromfinland.com) for creating this course!_
 
 ## Languages & Tools
 
