@@ -20,8 +20,6 @@ This is my first project involving AI. While following FCC's guide on making an 
 
 -   Visit the [Deployed Site](https://v-iinh.github.io/self-driving-car/). The goal is to get the car to navigate past traffic. The vast majority will initially be bugged. If this happens, just refresh the page to try another batch of iterations. If there is a car that does well through the obstacles, you can save it to use this car's neural network as the basis for the next set of cars when you refresh.
 
----
-
 ## Run Locally
 
 Clone the project
