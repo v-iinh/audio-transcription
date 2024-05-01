@@ -89,3 +89,7 @@ button:hover{
 #addObstacle, #removeObstacle, .four {
     background-color: rgba(160, 100, 255, 0.707); 
 }
+
+a {
+    color: black;
+}
