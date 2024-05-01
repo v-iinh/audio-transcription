@@ -179,7 +179,9 @@ function animate(){
         )
     );
 
-    carCanvas.height=window.innerHeight + 500;
+    var page = document.getElementById('page');
+    carCanvas.height = page.offsetHeight;
+    
 
     carCtx.save(); 
     carCtx.translate(0, -bestCar.y+carCanvas.height*0.7); 

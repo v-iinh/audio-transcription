@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body id="page">
     <div id="verticalText">
         <div class="text one" style="display: flex; flex-direction: row;">Trial Status:&nbsp<div class="local" id="localStatus"></div></div>
         <div class="text two" style="display: flex; flex-direction: row;">Number of Cars:&nbsp<div class="local" id="localNumber"></div></div>
         <div class="text three" style="display: flex; flex-direction: row;">Rate of Mutation:&nbsp<div class="local" id="localRate"></div></div>
-        <div class="text four" style="display: flex; flex-direction: row;">Total Obstacles:&nbsp<div class="local" id="localObstacles"></div></div>
+        <div class="text four" style="display: flex; flex-direction: row; margin-bottom: 0;">Total Obstacles:&nbsp<div class="local" id="localObstacles"></div></div>
     </div>
     <canvas id="carCanvas"></canvas>
     <div id="verticalButtons">
@@ -21,7 +21,7 @@
         <button id="mutationUp" onClick="window.location.reload();">Increase Mutate</button>
         <button id="mutationDown" onClick="window.location.reload();">Decrease Mutate</button>
         <button id="addObstacle">Add Obstacle</button>
-        <button id="removeObstacle">Remove Obstacle</button>
+        <button id="removeObstacle" style="margin-bottom: 0;">Remove Obstacle</button>
     </div>
     <script src="scripts/network.js"></script>
     <script src="scripts/sensor.js"></script>
