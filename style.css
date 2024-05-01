@@ -1,10 +1,11 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 body{
     margin: 0;
-    background: white; 
+    background: #4e9f52; 
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -18,21 +19,26 @@ body{
     margin: 0% 0% 0% 2.5%;
 }
 
+#verticalText{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2.5% 0% 0%;
+}
+
 button{
-    border-color: white;
     border-radius: 5px;
-    padding: 5px 5px 7px 5px; 
+    padding: 5px 5px 5px 5px; 
     margin: 2px; 
     cursor: pointer; 
     margin-bottom: 17.5%;
     width: 200px;
-    background: lightgray;
     font-weight: bold;
+    border: 2px solid black;
 }
 
 button:hover{
-    background: #F0DB5B;
-    transition: 1s;
+    filter: brightness(.75);
+    transition: 0.5s;
 }
 
 #networkCanvas{
@@ -40,54 +46,46 @@ button:hover{
 }
 
 #carCanvas{
-    background: white;
-}
-
-.trueContainer{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Optional: Center items horizontally in the container */
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    display: none;
-}
-
-.container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    width: 50%;
-    height: 100vh;
-    justify-content: center;
+    background: #453a3a;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
 }
 
 .text {
     margin-top: 1%;
     margin-bottom: 1%;
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    letter-spacing: 1px;
 }
 
-.local {
-    border: 5px solid darkgray;
-    margin-bottom: 10px;
-    align-items: center;
+.one, .two, .three, .four {
+    padding: 5px 5px 5px 5px; 
+    border: 2px solid black;
+    border-radius: 5px;
     justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    align-items: center;
+    display: flex;
+    margin-bottom: 17.5%;
 }
 
-.exit{
-    margin-top: 2.5%;
-    scale: 2.5;
+#refresh {
+    background-color: rgba(255, 174, 99, 0.723);
+}
+
+#save, #discard, .one {
+    background-color: rgba(247, 131, 255, 0.707); 
+}
+
+#addCarsButton, #removeCarsButton, .two {
+    background-color: rgba(143, 233, 255, 0.707);
+}
+
+#mutationUp, #mutationDown, .three {
+    background-color: rgba(239, 255, 134, 0.707);
+}
+
+#addObstacle, #removeObstacle, .four {
+    background-color: rgba(160, 100, 255, 0.707); 
 }
