@@ -131,6 +131,13 @@ function updateObstacleCount() {
 
 document.addEventListener("DOMContentLoaded", function() {
     updateObstacleCount();
+    var localStorageData = localStorage.getItem('numberOfCars');
+    var localStorageDiv = document.getElementById('localNumber');
+    localStorageDiv.innerHTML = localStorageData;
+
+    var localStorageData = localStorage.getItem('mutationRate');
+    var localStorageDiv = document.getElementById('localRate');
+    localStorageDiv.innerHTML = localStorageData;
 });
 
 document.getElementById("addObstacle").addEventListener("click", addObstacle);
