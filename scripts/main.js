@@ -179,7 +179,7 @@ function animate(){
         )
     );
 
-    carCanvas.height=window.innerHeight;
+    carCanvas.height=window.innerHeight + 500;
 
     carCtx.save(); 
     carCtx.translate(0, -bestCar.y+carCanvas.height*0.7); 
